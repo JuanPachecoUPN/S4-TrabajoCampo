@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WS_FA_UPN\\S4TrabajoCampo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CE25387-30C6-4819-8A65-0A006F71B271}|S4TrabajoCampo\\S4TrabajoCampo.csproj|d:\\ws_fa_upn\\s4trabajocampo\\s4trabajocampo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CE25387-30C6-4819-8A65-0A006F71B271}|S4TrabajoCampo\\S4TrabajoCampo.csproj|solutionrelative:s4trabajocampo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WS_FA_UPN\\S4TrabajoCampo\\S4TrabajoCampo\\Program.cs",
+              "RelativeDocumentMoniker": "S4TrabajoCampo\\Program.cs",
+              "ToolTip": "D:\\WS_FA_UPN\\S4TrabajoCampo\\S4TrabajoCampo\\Program.cs",
+              "RelativeToolTip": "S4TrabajoCampo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T20:25:39.705Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
