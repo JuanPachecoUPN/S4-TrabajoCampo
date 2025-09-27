@@ -1,0 +1,7 @@
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\bin\Debug\S4TrabajoCampo.exe.config
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\bin\Debug\S4TrabajoCampo.exe
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\bin\Debug\S4TrabajoCampo.pdb
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\obj\Debug\S4TrabajoCampo.csproj.AssemblyReference.cache
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\obj\Debug\S4TrabajoCampo.csproj.CoreCompileInputs.cache
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\obj\Debug\S4TrabajoCampo.exe
+D:\CODIGOS\S4-TrabajoCampo\S4TrabajoCampo\obj\Debug\S4TrabajoCampo.pdb
