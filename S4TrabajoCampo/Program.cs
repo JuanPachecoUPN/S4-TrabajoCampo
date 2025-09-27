@@ -20,43 +20,59 @@ namespace S4TrabajoCampo
 
         static void mostrarMenu()
         {
+            string dato;
             int opcion;
 
             do
             {
                 Console.Clear();
+                Console.WriteLine("==================================");
+                Console.WriteLine("      Bienvenido a TU CAJERO      ");
+                Console.WriteLine("==================================");
                 Console.WriteLine("1. Consultar");
                 Console.WriteLine("2. Retirar");
                 Console.WriteLine("3. Depositar");
                 Console.WriteLine("4. Salir");
-                opcion = int.Parse(Console.ReadLine());
 
-                switch (opcion)
+                dato = Console.ReadLine();
+                if (int.TryParse(dato, out opcion))
                 {
-                    case 1:
-                        consultarSaldo();
-                        mostrarMenu();
-                        break;
-                    case 2:
-                        verificarIntentosFallidos();
-                        solicitarMonto("R");
-                        validarMonto("R");
-                        actualizarSaldo("R", monto);
-                        mensajeExito();
-                        mostrarMenu();
-                        break;
-                    case 3:
-                        solicitarMonto("D");
-                        validarMonto("D");
-                        actualizarSaldo("D", monto);
-                        mensajeExito();
-                        mostrarMenu();
-                        break;
+                    switch (opcion)
+                    {
+                        case 1:
+                            consultarSaldo();
+                            break;
+                        case 2:
+                            verificarIntentosFallidos();
+                            solicitarMonto("R");
+                            validarMonto("R");
+                            actualizarSaldo("R", monto);
+                            mensajeExito();
+                            break;
+                        case 3:
+                            solicitarMonto("D");
+                            validarMonto("D");
+                            break;
+                    }
+                    if (opcion <= 0 || opcion > 4)
+                    {
+                        Console.WriteLine("Selección no válida.");
+                        Console.WriteLine("Presione cualquier tecla para volver al menú");
+                        Console.ReadKey();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Selección no válida. Debe ingresar un número");
+                    Console.WriteLine("'Presione cualquier tecla para volver al menú'");
+                    Console.ReadKey();
                 }
             }
             while (opcion != 4);
 
-            Console.WriteLine("Programa Finalizado");
+            Console.WriteLine("================================================");
+            Console.WriteLine("Programa finalizado. Gracias por su preferencia.");
+            Console.WriteLine("================================================");
             Console.ReadKey();
         }
 
@@ -121,14 +137,17 @@ namespace S4TrabajoCampo
             }
             else if (tipoOperacion == "D")
             {
-                if (monto <= 0)
+                if (monto > 0)
                 {
-                    Console.WriteLine("Monto no válido");
-                    mostrarMenu();
+                    actualizarSaldo("D", monto);
+                    Console.WriteLine("Procesando...");
+                    mensajeExito();
                 }
                 else
                 {
-                    Console.WriteLine("Procesando...");
+                    Console.WriteLine("Monto no válido");
+                    Console.ReadKey();
+                    //mostrarMenu();
                 }
 
             }
@@ -171,3 +190,4 @@ namespace S4TrabajoCampo
 
     }
 }
+
